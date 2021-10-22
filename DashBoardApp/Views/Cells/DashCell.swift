@@ -18,12 +18,13 @@ struct DashCell: View {
                 .fill(color)
                 .shadow(radius: 6)
             Text(context)
-                .font(.title)
+                .font(.title3)
                 .foregroundColor(.white)
                 .bold()
                 .minimumScaleFactor(0.3)
-                .padding()
+                .padding(2)
         }
+        .frame(width: 100, height: 100, alignment: .center)
         
         
     }

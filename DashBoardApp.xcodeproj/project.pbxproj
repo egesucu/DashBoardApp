@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D306312271F288600D40A17 /* DashBoardAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D306311271F288600D40A17 /* DashBoardAppApp.swift */; };
-		9D306314271F288600D40A17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D306313271F288600D40A17 /* ContentView.swift */; };
+		9D306312271F288600D40A17 /* DashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D306311271F288600D40A17 /* DashboardApp.swift */; };
+		9D306314271F288600D40A17 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D306313271F288600D40A17 /* DashboardView.swift */; };
 		9D306316271F288700D40A17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D306315271F288700D40A17 /* Assets.xcassets */; };
 		9D306319271F288700D40A17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D306318271F288700D40A17 /* Preview Assets.xcassets */; };
 		9D4FE0D427232821005E21CE /* DashCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FE0D327232821005E21CE /* DashCell.swift */; };
+		9D4FE0D627232CFA005E21CE /* DashItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FE0D527232CFA005E21CE /* DashItem.swift */; };
+		9D4FE0D827232FC6005E21CE /* QuoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FE0D727232FC6005E21CE /* QuoteCell.swift */; };
+		9D4FE0DA2723306E005E21CE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4FE0D92723306E005E21CE /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D30630E271F288600D40A17 /* DashBoardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashBoardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D306311271F288600D40A17 /* DashBoardAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardAppApp.swift; sourceTree = "<group>"; };
-		9D306313271F288600D40A17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D306311271F288600D40A17 /* DashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardApp.swift; sourceTree = "<group>"; };
+		9D306313271F288600D40A17 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		9D306315271F288700D40A17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D306318271F288700D40A17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D4FE0D327232821005E21CE /* DashCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCell.swift; sourceTree = "<group>"; };
+		9D4FE0D527232CFA005E21CE /* DashItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashItem.swift; sourceTree = "<group>"; };
+		9D4FE0D727232FC6005E21CE /* QuoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCell.swift; sourceTree = "<group>"; };
+		9D4FE0D92723306E005E21CE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +59,10 @@
 		9D306310271F288600D40A17 /* DashBoardApp */ = {
 			isa = PBXGroup;
 			children = (
-				9D306311271F288600D40A17 /* DashBoardAppApp.swift */,
-				9D306313271F288600D40A17 /* ContentView.swift */,
-				9D4FE0D327232821005E21CE /* DashCell.swift */,
-				9D306315271F288700D40A17 /* Assets.xcassets */,
+				9D4FE0E0272334EA005E21CE /* Utilities */,
+				9D4FE0DC272334A1005E21CE /* Models */,
+				9D4FE0DB2723345D005E21CE /* Views */,
+				9D4FE0DD272334AE005E21CE /* View Models */,
 				9D306317271F288700D40A17 /* Preview Content */,
 			);
 			path = DashBoardApp;
@@ -68,6 +74,49 @@
 				9D306318271F288700D40A17 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D4FE0DB2723345D005E21CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D306313271F288600D40A17 /* DashboardView.swift */,
+				9D4FE0DE272334B8005E21CE /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D4FE0DC272334A1005E21CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D4FE0D527232CFA005E21CE /* DashItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D4FE0DD272334AE005E21CE /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D4FE0D92723306E005E21CE /* ContentViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		9D4FE0DE272334B8005E21CE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9D4FE0D327232821005E21CE /* DashCell.swift */,
+				9D4FE0D727232FC6005E21CE /* QuoteCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9D4FE0E0272334EA005E21CE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9D306311271F288600D40A17 /* DashboardApp.swift */,
+				9D306315271F288700D40A17 /* Assets.xcassets */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D306314271F288600D40A17 /* ContentView.swift in Sources */,
-				9D306312271F288600D40A17 /* DashBoardAppApp.swift in Sources */,
+				9D4FE0D827232FC6005E21CE /* QuoteCell.swift in Sources */,
+				9D4FE0D627232CFA005E21CE /* DashItem.swift in Sources */,
+				9D4FE0DA2723306E005E21CE /* ContentViewModel.swift in Sources */,
+				9D306314271F288600D40A17 /* DashboardView.swift in Sources */,
+				9D306312271F288600D40A17 /* DashboardApp.swift in Sources */,
 				9D4FE0D427232821005E21CE /* DashCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
